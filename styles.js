@@ -36,6 +36,11 @@ export default StyleSheet.create({
     fontSize: 16,
     fontWeight: '700',
   },
+  price1: {
+    marginLeft: 17,
+    fontSize: 16,
+    fontWeight: '700',
+  },
   primaryBtn: {
     margin: 16,
     padding: 16,

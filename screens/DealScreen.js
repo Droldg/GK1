@@ -3,6 +3,7 @@ import styles from '../styles';
 import { dealsById } from '../data/deals';
 import { useReservations } from '../store/reservations';
 
+// skærm til visning af deal-detaljer og reservation
 export default function DealScreen({ route, navigation }) {
   const { dealId } = route.params;
   const deal = dealsById[dealId];
@@ -19,7 +20,7 @@ export default function DealScreen({ route, navigation }) {
       <Text style={styles.h1}>{deal.vendor}</Text>
       <Text style={styles.body}>{deal.title}</Text>
       <Text style={styles.body}>Afhentning: {deal.pickupWindow}</Text>
-      <Text style={styles.price}>DKK {deal.price} (før {deal.originalPrice})</Text>
+      <Text style={styles.price1}>DKK {deal.price} (før {deal.originalPrice})</Text>
 
       <TouchableOpacity style={styles.primaryBtn} onPress={reserve}>
         <Text style={styles.primaryBtnText}>Reserver</Text>

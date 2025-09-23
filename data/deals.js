@@ -1,3 +1,5 @@
+//Dummy data til liste og kort 
+
 export const deals = [
   { id: '1', vendor: 'Kantinen - HQ', title: 'Blandede madkasser (2 pers.)', price: 25, originalPrice: 80, pickupWindow: '16:30-17:00 i dag', latitude: 55.6761, longitude: 12.5683 }, // København K
   { id: '2', vendor: 'Fredagsbar · IT-afd.', title: 'Drikkevarepakke (rester)', price: 40, originalPrice: 120, pickupWindow: '18:00-18:30 i dag', latitude: 55.6666, longitude: 12.5541 }, // Vesterbro
@@ -21,4 +23,5 @@ export const deals = [
   { id: '20', vendor: 'Kantinen - Bygning B', title: 'Sodavand (6 blandede)', price: 20, originalPrice: 54, pickupWindow: '18:00-18:20 i dag', latitude: 55.7310, longitude: 12.3639 }, // Ballerup
 ];
 
+// hjælpeobjekt til hurtigt opslag af deals via ID
 export const dealsById = Object.fromEntries(deals.map(d => [d.id, d]));
